@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<title> Mohammad Omar </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  
+    <div id="Text">  
+    <h1> Mohammad Omar </h1>
+    <h3> About me</h2>
+    <p> I am a student at the University of An-Najah. I am currently in my forth year of the Computer Engineering program. I am interested in the field of software engineering.</p>
+    <h3>Last achivments</h3>
+    <p>In the last semseter i got the Third place in "WEB CONTEST", With my project called "NAHDA" it's a website for clean content which have several useful Podcasts, series  and movies.</p>
+    <h3>Societies and clubs</h3>
+    <p> I am a board member of the Arab Innovation Network.</p>
+    <p>regular member at IEEE, and participated in the last IEEE Xtreem (16.0)</p>
+    <button id="next">Why iam Here</button>
+
+    <div id="light">
+        <div id="lineh1"></div>
+    </div>
+</div>
+    <p> <img src="Mohammad.jpeg" alt="Mohammad Omar" width="200" height="200"> </p>
+</div>
+<script>
+    let clicked=false;
+    var next = document.getElementById("next");
+    next.onclick = function() {
+        document.getElementById('light').className = 'classname';
+        setInterval(function() {
+            document.getElementById('Text').innerHTML = '<h1> Mohammad Omar </h1>'
+        + '<h3> Why iam here?</h3>'
+        + '<p> I am here to learn more about React and learn a new skills that might be useful for creating websites in an easy way, and who knows? i might get a job</p>'
+        + '<h3>why React?</h3>'
+        + '<p>beside my intnesity to the backend side of programming, i love to know more about frontend, and react is easy and very helpful, and will help me alot in the gradutaion softawre project next summer</p>'
+        + '<h3>What i hope to get after this course?</h3>'
+        + '<p> get a job :D </p>'
+        + '<div id="light">'
+        + '<div id="lineh1"></div>'
+        + '</div>';
+        
+        }, 2500);
+       
+      
+    }
+    
+    
+
+    
+
+</script>
+</body>
